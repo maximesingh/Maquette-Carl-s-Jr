@@ -36,3 +36,14 @@ function slidePrecedente() {
 }
 
 precedent.addEventListener("click", slidePrecedente);
+
+// Menu Hamburger Toggle //
+
+const btnMenu = document.querySelector('.toggleMenu')
+const menuList= document.querySelector('.linkNavigation')
+
+btnMenu.addEventListener('click',function(){
+
+menuList.classList.toggle('linkNavigation')
+
+})
