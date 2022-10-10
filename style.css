@@ -494,13 +494,13 @@ footer img {
   .previousArrow {
     position: absolute;
     width: 10%;
-    top: 40%;
+    top: 25%;
   }
 
   .nextArrow {
     position: absolute;
     width: 10%;
-    top: 40%;
+    top: 25%;
   }
 
   .containerBurger{
