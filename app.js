@@ -3,7 +3,7 @@ const nbSlide = items.length;
 const suivant = document.querySelector(".nextArrow");
 const precedent = document.querySelector(".previousArrow");
 let count = 0;
-let time = 10000;
+let time = 8000;
 
 function slideSuivante() {
   items[count].classList.remove("active");
@@ -13,9 +13,9 @@ function slideSuivante() {
    count = 2
   }
   items[count].classList.add("active");
-  // setTimeout(slideSuivante, time)
+  setTimeout(slideSuivante, time)
 }
-// window.onload = slideSuivante
+window.onload = slideSuivante
 
 suivant.addEventListener("click", slideSuivante);
 

@@ -395,7 +395,7 @@ footer img {
 .creator{
   color: #f1f1f1;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 428px) {
   header {
     display: block;
   }
