@@ -71,11 +71,22 @@ header a {
   margin-top: 0px;
 }
 
-.slider img {
+.slider .slider_img {
   position: relative;
   max-width: 100%;
   margin: auto;
   display: none;
+}
+.slider .slider_img.active {
+  display: block;
+}
+
+.slider .arrow {
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+}
+.slider:hover .arrow {
+  opacity: 1;
 }
 
 /* Arrow left & Right */
@@ -487,20 +498,26 @@ footer img {
     display: none;
   }
 
-  .slider img {
-    position: relative;
+  .slider .arrow {
+    opacity: 0;
   }
+
+  .containerSlider:hover .arrow{
+    opacity: 1;
+  }
+
+ 
 
   .previousArrow {
     position: absolute;
     width: 10%;
-    top: 25%;
+    top: 20%;
   }
 
   .nextArrow {
     position: absolute;
     width: 10%;
-    top: 25%;
+    top: 20%;
   }
 
   .containerBurger{

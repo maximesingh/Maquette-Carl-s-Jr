@@ -13,9 +13,9 @@ function slideSuivante() {
    count = 2
   }
   items[count].classList.add("active");
-  setTimeout(slideSuivante, time)
+  // setTimeout(slideSuivante, time)
 }
-window.onload = slideSuivante
+// window.onload = slideSuivante
 
 suivant.addEventListener("click", slideSuivante);
 
